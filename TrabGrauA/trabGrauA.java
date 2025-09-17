@@ -12,15 +12,15 @@ public class trabGrauA {
         String maiorVendaQtd = "";
 
         // info do estoque
-        int estoqueCalca = 20; int codCalca = 1 ;double precoCalca = 112.00; String calca = "Calça";
-        int estoqueCamisa = 18; int codCamisa = 2 ;double precoCamisa = 95.00;  String camisa = "Camisa";
-        int estoqueBermuda = 23; int codBermuda = 3 ;double precoBermuda = 49.90;  String bermuda = "Bermuda";
-        int estoqueSaia = 12; int codSaia = 4; double precoSaia = 169.00; String saia = "Saia";
-        int estoqueBlusa = 9; int codBlusa = 5;  double precoBlusa = 120.00; String blusa = "Blusa";
-        int estoqueMoletom = 4; int codMoletom = 6;  double precoMoletom = 135.00; String moletom = "Moletom";
-        int estoqueMeia = 17; int codMeia = 7; double precoMeia = 12.99;  String meia = "Meia";
-        int estoqueTenis = 8; int codTenis = 8; double precoTenis = 183.00; String tenis = "Tênis";
-        int estoqueBota = 3; int codBota = 9; double precoBota = 219.90; String bota = "Bota";
+        int estoqueCalca = 20; double precoCalca = 112.00; String calca = "Calça";
+        int estoqueCamisa = 18; double precoCamisa = 95.00;  String camisa = "Camisa";
+        int estoqueBermuda = 23; double precoBermuda = 49.90;  String bermuda = "Bermuda";
+        int estoqueSaia = 12; double precoSaia = 169.00; String saia = "Saia";
+        int estoqueBlusa = 9; double precoBlusa = 120.00; String blusa = "Blusa";
+        int estoqueMoletom = 4; double precoMoletom = 135.00; String moletom = "Moletom";
+        int estoqueMeia = 17; double precoMeia = 12.99;  String meia = "Meia";
+        int estoqueTenis = 8; double precoTenis = 183.00; String tenis = "Tênis";
+        int estoqueBota = 3; double precoBota = 219.90; String bota = "Bota";
 
         //menu 
         int opcaoMenu;
@@ -117,15 +117,15 @@ public class trabGrauA {
                 System.out.print("\nInsira a quantidade que deseja repor: ");
                 int qtd = scanner.nextInt();
 
-                if( codProduto == 1 ) calca += qtd;
-                else if ( codProduto == 2 ) camisa += qtd;
-                else if ( codProduto == 3 ) bermuda += qtd;
-                else if ( codProduto == 4 ) saia += qtd;
-                else if ( codProduto == 5 ) blusa += qtd;
-                else if ( codProduto == 6 ) moletom += qtd;
-                else if ( codProduto == 7 ) meia += qtd;
-                else if ( codProduto == 8 ) tenis += qtd;
-                else if ( codProduto == 9 ) bota += qtd; 
+                if( codProduto == 1 ) estoqueCalca += qtd;
+                else if ( codProduto == 2 ) estoqueCamisa += qtd;
+                else if ( codProduto == 3 ) estoqueBermuda += qtd;
+                else if ( codProduto == 4 ) estoqueSaia += qtd;
+                else if ( codProduto == 5 ) estoqueBlusa += qtd;
+                else if ( codProduto == 6 ) estoqueMoletom += qtd;
+                else if ( codProduto == 7 ) estoqueMeia += qtd;
+                else if ( codProduto == 8 ) estoqueTenis += qtd;
+                else if ( codProduto == 9 ) estoqueBota += qtd; 
                 else System.out.println("\nCódigo Inválido");
             }
 
@@ -163,12 +163,12 @@ public class trabGrauA {
             //Integrantes
             else if (opcaoMenu == 6){
                 System.out.println("\nIntegrantes do Grupo: ");
-                System.out.println("\nJoão, Pedro e Victor");
+                System.out.println("\nJoão Vitor Soares Rosa, Pedro Gabriel Oliveira e Victor Fernandes dos Anjos");
 
             }
         }while(opcaoMenu!=7);
         scanner.close();
-        System.out.println("\nITS over...");
+        System.out.println("\nEncerrando Programa...ITS OVER");
          
         
     }
